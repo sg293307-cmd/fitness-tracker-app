@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack - Smart Fitness Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-heart-pulse"></i> FitTrack
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="index.html#workouts">Workouts</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="user-profile">
+                <div class="user-info">
+                    <span class="user-name">Alex Morgan</span>
+                    <span class="user-status">Premium Member</span>
+                </div>
+                <img src="img.webp" alt="User Profile" class="profile-pic">
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <p class="sub-tag"><i class="fa-solid fa-bolt"></i> YOUR FITNESS JOURNEY</p>
+            <h1>Push Your Limits,<br>Achieve Your Goals</h1>
+            <p class="quote">"The only bad workout is the one that didn't happen. Track your progress, stay consistent, and watch yourself transform."</p>
+            <div class="hero-btns">
+                <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> Start Workout</button>
+                <button class="btn btn-secondary"><i class="fa-solid fa-chart-line"></i> View Progress</button>
+            </div>
+        </div>
+    </section>
+    <main class="dashboard-container">
+    <div class="section-header">
+        <h2>Recent Workouts</h2>
+        <button class="add-btn"><i class="fa-solid fa-plus"></i> Add Workout</button>
+    </div>
+
+    <div class="workout-grid">
+        <div class="workout-card">
+            <div class="card-top">
+                <div class="icon-box run-icon"><i class="fa-solid fa-person-running"></i></div>
+                <div class="card-title">
+                    <h3>Morning Run</h3>
+                    <p>Running • Today, 6:30 AM</p>
+                </div>
+            </div>
+            <div class="card-stats">
+                <div class="stat">
+                    <span><i class="fa-regular fa-clock"></i> Duration</span>
+                    <strong>45 min</strong>
+                </div>
+                <div class="stat">
+                    <span><i class="fa-solid fa-fire"></i> Calories</span>
+                    <strong>420 kcal</strong>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-label"><span>Goal Progress</span> <span>84%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 84%;"></div></div>
+            </div>
+        </div>
+
+        <div class="workout-card">
+            <div class="card-top">
+                <div class="icon-box yoga-icon"><i class="fa-solid fa-leaf"></i></div>
+                <div class="card-title">
+                    <h3>Yoga Session</h3>
+                    <p>Yoga • Today, 8:00 AM</p>
+                </div>
+            </div>
+            <div class="card-stats">
+                <div class="stat">
+                    <span><i class="fa-regular fa-clock"></i> Duration</span>
+                    <strong>60 min</strong>
+                </div>
+                <div class="stat">
+                    <span><i class="fa-solid fa-fire"></i> Calories</span>
+                    <strong>180 kcal</strong>
+                </div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-label"><span>Goal Progress</span> <span>90%</span></div>
+                <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header" style="margin-top: 40px;">
+        <h2>Fitness Goals</h2>
+    </div>
+    
+    <div class="goals-container">
+        <div class="goal-item">
+            <div class="goal-info">
+                <div class="icon-box goal-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div>
+                    <h3>Lose 5kg in 2 months</h3>
+                    <p>Target: 5kg • <i class="fa-regular fa-calendar"></i> May 15, 2026</p>
+                </div>
+                <span class="goal-perc">35%</span>
+            </div>
+            <div class="progress-bar"><div class="progress-fill" style="width: 35%;"></div></div>
+        </div>
+
+        <button class="add-goal-dashed">
+            <i class="fa-solid fa-circle-plus"></i> Add New Goal
+        </button>
+    </div>
+    
+</main>
+
+<section class="preferences-section">
+        <div class="section-header">
+            <h2>Preferences</h2>
+        </div>
+        <div class="preferences-container">
+            <div class="pref-item">
+                <div class="pref-info">
+                    <div class="icon-circle"><i class="fa-regular fa-bell"></i></div>
+                    <div>
+                        <h4>Workout Reminders</h4>
+                        <p>Get daily notifications</p>
+                    </div>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="pref-item">
+                <div class="pref-info">
+                    <div class="icon-circle"><i class="fa-regular fa-calendar-lines"></i></div>
+                    <div>
+                        <h4>Weekly Reports</h4>
+                        <p>Email summary every Monday</p>
+                    </div>
+                </div>
+                <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="pref-item">
+                <div class="pref-info">
+                    <div class="icon-circle"><i class="fa-solid fa-layer-group"></i></div>
+                    <div>
+                        <h4>Auto-sync Devices</h4>
+                        <p>Connect fitness trackers</p>
+                    </div>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+    </section>
+    <section id="nutrition" class="dashboard-container" style="margin-top: 40px;">
+    <div class="section-header">
+        <h2>Nutrition Overview</h2>
+        <button class="add-btn"><i class="fa-solid fa-utensils"></i> Log Meal</button>
+    </div>
+
+    <div class="nutrition-grid">
+        <div class="nutrition-card main-stats">
+            <div class="calorie-ring">
+                <div class="ring-content">
+                    <strong>1,840</strong>
+                    <span>kcal left</span>
+                </div>
+            </div>
+            <div class="macro-breakdown">
+                <div class="macro">
+                    <span>Protein</span>
+                    <div class="macro-bar"><div class="fill protein" style="width: 70%;"></div></div>
+                    <small>120g / 180g</small>
+                </div>
+                <div class="macro">
+                    <span>Carbs</span>
+                    <div class="macro-bar"><div class="fill carbs" style="width: 45%;"></div></div>
+                    <small>150g / 300g</small>
+                </div>
+                <div class="macro">
+                    <span>Fats</span>
+                    <div class="macro-bar"><div class="fill fats" style="width: 80%;"></div></div>
+                    <small>65g / 80g</small>
+                </div>
+            </div>
+        </div>
+
+        <div class="nutrition-card">
+            <h3>Today's Meals</h3>
+            <ul class="meal-list">
+                <li>
+                    <div class="meal-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                    <div class="meal-info">
+                        <strong>Oatmeal with Berries</strong>
+                        <span>Breakfast • 8:30 AM</span>
+                    </div>
+                    <div class="meal-cal">350 kcal</div>
+                </li>
+                <li>
+                    <div class="meal-icon"><i class="fa-solid fa-bowl-food"></i></div>
+                    <div class="meal-info">
+                        <strong>Grilled Chicken Salad</strong>
+                        <span>Lunch • 1:15 PM</span>
+                    </div>
+                    <div class="meal-cal">520 kcal</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="settings" class="dashboard-container" style="margin-top: 40px;">
+    <div class="section-header">
+        <h2>Account Settings</h2>
+    </div>
+
+    <div class="settings-card">
+        <div class="settings-tabs">
+            <button class="tab-btn active">Profile</button>
+            <button class="tab-btn">Security</button>
+            <button class="tab-btn">Notifications</button>
+        </div>
+
+        <div class="settings-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Full Name</label>
+                    <input type="text" value="Alex Morgan">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" value="alex.m@fittrack.com">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group">
+                    <label>Weight (kg)</label>
+                    <input type="number" value="75">
+                </div>
+                <div class="form-group">
+                    <label>Height (cm)</label>
+                    <input type="number" value="180">
+                </div>
+            </div>
+            <div class="form-actions">
+                <button class="btn-save">Save Changes</button>
+                <button class="btn-outline">Cancel</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="main-footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo white"><i class="fa-solid fa-heart-pulse"></i> FitTrack</div>
+                <p>Your ultimate fitness companion. Track workouts, monitor progress, and achieve your fitness goals.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Workouts</a></li>
+                    <li><a href="#">Nutrition</a></li>
+                    <li><a href="#">Progress Reports</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Community</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><i class="fa-regular fa-envelope"></i> support@fittrack.com</li>
+                    <li><i class="fa-solid fa-phone"></i> +1 (555) 123-4567</li>
+                    <li><i class="fa-solid fa-location-dot"></i> 123 Fitness Avenue, SF</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 FitTrack. All rights reserved. Made with passion for your fitness journey.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

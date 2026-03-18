@@ -1,0 +1,73 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - FitTrack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo"><i class="fa-solid fa-heart-pulse"></i> FitTrack</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="index.html#workouts">Workouts</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="settings.html" class="active">Settings</a></li>
+            </ul>
+            <div class="user-profile">
+                <img src="https://via.placeholder.com/40" class="profile-pic">
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-container" style="margin-top: 40px;">
+        <div class="section-header">
+            <h2>Account Settings</h2>
+        </div>
+
+        <div class="settings-card">
+            <div class="settings-tabs">
+                <button class="tab-btn active">Profile Details</button>
+                <button class="tab-btn">Privacy & Security</button>
+                <button class="tab-btn">Apps & Devices</button>
+            </div>
+
+            <div class="settings-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" placeholder="Alex Morgan">
+                    </div>
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="alex.m@fittrack.com">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label>Weight (kg)</label>
+                        <input type="number" placeholder="75">
+                    </div>
+                    <div class="form-group">
+                        <label>Target Weight (kg)</label>
+                        <input type="number" placeholder="70">
+                    </div>
+                </div>
+                <div class="form-group" style="margin-bottom: 20px;">
+                    <label>Bio</label>
+                    <textarea style="width:100%; height:80px; padding:10px; border-radius:6px; border:1px solid #e2e8f0; outline:none;"></textarea>
+                </div>
+                <div class="form-actions">
+                    <button class="btn-save">Save Changes</button>
+                    <button class="btn-outline">Reset to Default</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

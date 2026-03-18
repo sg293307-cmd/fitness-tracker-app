@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Tracker - FitTrack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo"><i class="fa-solid fa-heart-pulse"></i> FitTrack</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="index.html#workouts">Workouts</a></li>
+                <li><a href="nutrition.html" class="active">Nutrition</a></li>
+                <li><a href="progress.html">Progress</a></li>
+                <li><a href="settings.html">Settings</a></li>
+            </ul>
+            <div class="user-profile">
+                <div class="user-info">
+                    <span class="user-name">Alex Morgan</span>
+                    <span class="user-status">Premium Member</span>
+                </div>
+                <img src="https://via.placeholder.com/40" class="profile-pic">
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-container" style="margin-top: 40px;">
+        <div class="section-header">
+            <h2>Nutrition Overview</h2>
+            <button class="add-btn"><i class="fa-solid fa-plus"></i> Log Meal</button>
+        </div>
+
+        <div class="nutrition-grid">
+            <div class="nutrition-card main-stats">
+                <div class="calorie-ring">
+                    <div class="ring-content">
+                        <strong>1,840</strong>
+                        <span>kcal left</span>
+                    </div>
+                </div>
+                <div class="macro-breakdown">
+                    <div class="macro">
+                        <span>Protein (120g / 180g)</span>
+                        <div class="macro-bar"><div class="fill protein" style="width: 70%;"></div></div>
+                    </div>
+                    <div class="macro">
+                        <span>Carbs (150g / 300g)</span>
+                        <div class="macro-bar"><div class="fill carbs" style="width: 50%;"></div></div>
+                    </div>
+                    <div class="macro">
+                        <span>Fats (65g / 80g)</span>
+                        <div class="macro-bar"><div class="fill fats" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="nutrition-card">
+                <h3>Today's Meals</h3>
+                <ul class="meal-list">
+                    <li>
+                        <div class="meal-icon"><i class="fa-solid fa-mug-hot"></i></div>
+                        <div class="meal-info">
+                            <strong>Oatmeal with Berries</strong>
+                            <span>Breakfast • 8:30 AM</span>
+                        </div>
+                        <div class="meal-cal">350 kcal</div>
+                    </li>
+                    <li>
+                        <div class="meal-icon"><i class="fa-solid fa-bowl-food"></i></div>
+                        <div class="meal-info">
+                            <strong>Grilled Chicken Salad</strong>
+                            <span>Lunch • 1:15 PM</span>
+                        </div>
+                        <div class="meal-cal">520 kcal</div>
+                    </li>
+                    <li>
+                        <div class="meal-icon"><i class="fa-solid fa-apple-whole"></i></div>
+                        <div class="meal-info">
+                            <strong>Green Apple</strong>
+                            <span>Snack • 4:00 PM</span>
+                        </div>
+                        <div class="meal-cal">95 kcal</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

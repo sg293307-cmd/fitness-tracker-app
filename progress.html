@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Reports - FitTrack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <div class="logo">
+                <i class="fa-solid fa-heart-pulse"></i> FitTrack
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="#">Workouts</a></li>
+                <li><a href="#">Nutrition</a></li>
+                <li><a href="progress.html" class="active">Progress</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+            <div class="user-profile">
+                <div class="user-info">
+                    <span class="user-name">Alex Morgan</span>
+                    <span class="user-status">Premium Member</span>
+                </div>
+                <img src="https://via.placeholder.com/40" alt="User Profile" class="profile-pic">
+            </div>
+        </nav>
+    </header>
+
+    <main class="dashboard-container" style="margin-top: 40px;">
+        <div class="section-header">
+            <h2>Weekly Progress Overview</h2>
+            <div class="date-filter">
+                <span>March 12 - March 18, 2026</span>
+                <i class="fa-solid fa-calendar-days"></i>
+            </div>
+        </div>
+
+        <div class="progress-grid">
+            <div class="chart-card">
+                <h3>Weekly Workout Progress</h3>
+                <div class="chart-placeholder">
+                    <div class="bar-container">
+                        <div class="bar" style="height: 60%;" data-day="Mon"></div>
+                        <div class="bar" style="height: 80%;" data-day="Tue"></div>
+                        <div class="bar" style="height: 40%;" data-day="Wed"></div>
+                        <div class="bar" style="height: 90%;" data-day="Thu"></div>
+                        <div class="bar" style="height: 70%;" data-day="Fri"></div>
+                        <div class="bar" style="height: 30%;" data-day="Sat"></div>
+                        <div class="bar" style="height: 50%;" data-day="Sun"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chart-card">
+                <h3>Calories Burned Over Time</h3>
+                <div class="stats-summary">
+                    <div class="stat-item">
+                        <p>Total Burned</p>
+                        <strong>12,450 kcal</strong>
+                    </div>
+                    <div class="stat-item">
+                        <p>Daily Avg</p>
+                        <strong>1,778 kcal</strong>
+                    </div>
+                </div>
+                <div class="line-chart-placeholder">
+                    <svg viewBox="0 0 400 100" class="trend-line">
+                        <path d="M0,80 Q50,20 100,50 T200,30 T300,60 T400,10" fill="none" stroke="#10b981" stroke-width="3"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="table-container">
+            <h3>Recent Activity Log</h3>
+            <table class="progress-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Activity</th>
+                        <th>Duration</th>
+                        <th>Calories</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mar 18, 2026</td>
+                        <td>Morning Run</td>
+                        <td>45 min</td>
+                        <td>420 kcal</td>
+                        <td><span class="badge completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mar 17, 2026</td>
+                        <td>Weight Training</td>
+                        <td>50 min</td>
+                        <td>310 kcal</td>
+                        <td><span class="badge completed">Completed</span></td>
+                    </tr>
+                    <tr>
+                        <td>Mar 16, 2026</td>
+                        <td>Cycling</td>
+                        <td>40 min</td>
+                        <td>350 kcal</td>
+                        <td><span class="badge completed">Completed</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    </body>
+</html>
